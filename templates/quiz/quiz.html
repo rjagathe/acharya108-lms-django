@@ -1,0 +1,6 @@
+{% for quiz in quizzes %}
+  <h3>{{ quiz.question_text }}</h3>
+  <p>Answer: {{ quiz.correct_answer }}</p>
+{% empty %}
+  <p>No quizzes available.</p>
+{% endfor %}
