@@ -1,0 +1,6 @@
+{% for lesson in lessons %}
+  <h2>{{ lesson.title }}</h2>
+  <p>{{ lesson.content }}</p>
+{% empty %}
+  <p>No lessons available.</p>
+{% endfor %}
